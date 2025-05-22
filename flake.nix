@@ -37,6 +37,8 @@
               packages = with pkgs; [
                 netcat-gnu
                 socat
+                bazelisk
+                bazel-buildtools
               ];
               languages = {
                 java = {
