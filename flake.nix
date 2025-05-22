@@ -38,6 +38,13 @@
                 netcat-gnu
                 socat
               ];
+              languages = {
+                java = {
+                  enable = true;
+                  jdk.package = pkgs.openjdk17;
+                };
+                kotlin.enable = true;
+              };
               scripts = {
                 list =
                   let
